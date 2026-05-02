@@ -1,1 +1,31 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-base: 'Inter-Variable', Arial, sans-serif;
+  --font-accent: 'PressStart2P', fantasy;
+  --font-weight-base: 410;
+  --font-weight-title: 715;
+  --font-weight-text: 400;
+  --font-size-base: 18px;
+  --font-button__text: 14px;
+  --bg-image-grad:
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, transparent 2px 4px),
+    repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a 100%);
+  --bg-color: #fff;
+  --color: #000;
+  --page-width: clamp(375px, calc(260.563px + 30.516vw), 700px);
+  --header-title-font-size: clamp(3.063rem, 1.909rem + 4.92vw, 4.063rem);
+  --header-subtitle-font-size: clamp(0.875rem, 0.226rem + 2.77vw, 1.438rem);
+  --header-padding: clamp(122px, calc(119.183px + 0.751vw), 130px) clamp(16px, calc(-21.5px + 10vw), 122.5px);
+  --border-style: 2px solid #000;
+  --shadow-color: rgba(255, 255, 255, 1);
+  --time_step: 0.3s;
+  --heart-contour-color: #000;
+  --heart-sparks-color: #ff0000;
+
+}
+@media (width <= 375px) {
+  :root {
+    --page-width: clamp(320px, calc(0px + 100vw), 375px);
+  }
+}

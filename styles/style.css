@@ -362,10 +362,6 @@ body:has(.modal[open]) {
 }
 
 @media (width <= 375px) {
-  .button-save {
-    flex-direction: column;
-    height: 84px;
-  }
 
   .floppy {
     width: 28px;

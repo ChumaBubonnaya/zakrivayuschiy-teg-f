@@ -31,7 +31,7 @@
 
 .like-icon .contour {
   fill: var(--heart-contour-color);
-  transition: fill 0.1s linear;
+  transition: fill 0.1s linear 0s;
 }
 
 .like-icon .core {
@@ -41,7 +41,7 @@
 
 .like-icon .main-body {
   fill: transparent;
-  transition: fill 0.3s linear;
+  transition: fill 0.3s linear 0s;
 }
 
 .like-icon .sparks {
@@ -50,7 +50,7 @@
 
 .card__icon-button:hover .core {
   fill: var(--heart-contour-color);
-  transition: fill var(--time_step) linear;
+  transition: fill var(--time_step) linear 0s;
   cursor: pointer;
 }
 
@@ -62,7 +62,7 @@
 
 .card__icon-button:active .core {
   fill: var(--heart-sparks-color);
-  transition: fill var(--time_step) linear;
+  transition: fill var(--time_step) linear 0s;
 }
 
 .card__icon-button:active .main-body {
@@ -97,5 +97,4 @@
 .card__icon-button:focus-visible {
   outline: var(--border-style);
   outline-offset: 2px;
-  transition: outline 0.1s linear;
 }
